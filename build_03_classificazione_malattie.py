@@ -255,7 +255,7 @@ cells = [
             )
 
         cv_results = pd.DataFrame(cv_rows).sort_values(["recall_mean", "roc_auc_mean"], ascending=False)
-        display(cv_results.style.format("{:.4f}"))
+        display(cv_results.round(4))
         """
     ),
     C(
@@ -317,7 +317,7 @@ cells = [
         test_results = pd.DataFrame(test_rows).sort_values(
             ["recall", "roc_auc", "accuracy"], ascending=False
         )
-        display(test_results.style.format("{:.4f}"))
+        display(test_results.round(4))
 
         final_model_name = "RandomForestClassifier"
         final_model = tuned_models[final_model_name]
@@ -385,8 +385,8 @@ cells = [
             [final_metrics_default, final_metrics_optimized],
             index=["default_0.50", f"optimized_{optimal_threshold:.2f}"],
         )
-        display(candidate_thresholds.sort_values(["f1", "accuracy"], ascending=False).head(10))
-        display(comparison_thresholds.style.format("{:.4f}"))
+        display(candidate_thresholds.sort_values(["f1", "accuracy"], ascending=False).head(10).round(4))
+        display(comparison_thresholds.round(4))
         """
     ),
     C(

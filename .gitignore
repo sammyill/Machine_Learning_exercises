@@ -2,8 +2,9 @@
 artifacts/
 
 # Ignore all Jupyter Notebook files
-*.ipynb
+*.md
 *.csv
+*.py
 
 Mall_Customers.csv
 cifar-10-batches-py/batches.meta
