@@ -1,10 +1,12 @@
 # Ignore the entire artifacts folder and everything inside it
 artifacts/
+classificazione_rifiuti/
 
 # Ignore all Jupyter Notebook files
 *.md
 *.csv
 *.py
+
 
 Mall_Customers.csv
 cifar-10-batches-py/batches.meta
