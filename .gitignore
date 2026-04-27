@@ -6,6 +6,7 @@ classificazione_rifiuti/
 *.md
 *.csv
 *.py
+*.bz2
 
 
 Mall_Customers.csv
